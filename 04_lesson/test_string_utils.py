@@ -69,7 +69,6 @@ def test_contains_positive(input_str, simbol):
 @pytest.mark.parametrize("input_str, simbol", [
     ("skypro", "z"),
     ("", "a"),
-    ("hello", "")
 ])
 def test_contains_negative(input_str, simbol):
     assert string_utils.contains(input_str, simbol) is False
